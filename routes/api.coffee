@@ -21,11 +21,9 @@ router.post "/love_guess", (req, res) ->
     nickname: req.body.nickname ? ""
   , (lovesArr) ->
     if lovesArr.length > 0
-      mApi.byId lovesArr[0]._id, (loveObj) ->
-        res.json
-          status: 1
-          success: true
-          data: loveObj
+      res.json
+        status: 1
+        success: true
     else
       res.json
         status: 1
