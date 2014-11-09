@@ -1,0 +1,68 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+        meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
+        meta(http-equiv="cache-control", content="no-cache")
+        title 表白墙
+        link(rel="stylesheet", href="/css/love.css")
+    body(data-is_logged="")
+        #top.wrapper
+            .top
+                .head
+                    a.logo(href="#", title="表白墙")
+                a.goSayLove(href="#", title="我要表白")
+                .iWantTell
+            .content
+                .actionBar
+                    form.search(action="love.html", method="post")
+                        input.searchName(type="text", placeholder="输名字！")
+                        input.submitName(type="submit", value="")
+                .card(data-post_id="1", data-account_id="1")
+                    h3.target
+                        span Dear
+                        span.targetName 1
+                    p.passage
+                        | 1
+                    .guessWrapper
+                        .guess
+                        .guessOut
+                            input.guessInput(type="text", name="guess")
+                            span.guessSubmit
+            .mask
+                .logPanel(onclick="return false;")
+                    a.closeMask(href="#")
+                    form#sayLove.maskContent(action="love.html", method="post")
+                        div
+                            label(for="toWhom") Dear
+                            input.toWhom(type="text", name="toWhom", placeholder="表白对象")
+                        textarea.loveDeclaration(name="loveDeclaration", cols="30", rows="10")
+                        input.nickname(type="text", name= "nickname", placeholder="你的名字！")
+                        input.sayLoveSubmit(type="submit", value="表白")
+                    #guessRight.maskContent
+                        .loveContent
+                            h3.target
+                                span Dear
+                                span.targetName miao
+                            p.passage
+                                | 伦家喜欢你好久好久了
+                                br
+                                | 做我男朋友好不好
+                        p 是的你想的没错就TA是
+                        p
+                            strong
+                        p 真的被你发现了!
+                        p ╰ (*° ▽ °*) ╯
+                    #guessWrong.maskContent
+                        p 猜的不对哦
+                        p 哎哟乱讲了啦不是人家了啦
+                        p （｀・ω・´）
+            .backToTop
+                a(href="#top")
+                    .arrow
+                    .stick
+        p.message
+        script(src="/js/weixinapi.js")
+        script(src="/js/zepto.min.js")
+        script(src="/js/love.js")
