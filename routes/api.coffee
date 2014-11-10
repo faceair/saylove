@@ -9,7 +9,6 @@ router.post "/post", (req, res) ->
     nickname: req.body.nickname ? ""
     content: req.body.content ? ""
     target: req.body.target ? ""
-    guess_num: 0
     create_at: new Date()
   , ->
     res.json

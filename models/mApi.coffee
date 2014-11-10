@@ -8,7 +8,7 @@ exports.byId = (id, callback) ->
     callback loveDoc.toObject()
 
 exports.info = (loveObj) ->
-  return _.omit loveObj, ["nickname", "qq"]
+  return _.omit loveObj, ["nickname"]
 
 exports.find = (query, options, callback) ->
   if typeof options is "function"
