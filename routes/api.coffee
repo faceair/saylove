@@ -35,9 +35,6 @@ router.get "/search", (req, res) ->
     },{
       content: new RegExp(req.params.keywords, "ig")
     }]
-  ,
-    limit: req.query.limit ? 5
-    skip: req.query.offset ? 0
   , (lovesArr) ->
     res.json
       status: 1
