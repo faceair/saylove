@@ -6,7 +6,7 @@ createSchema = (doc, config = {}) ->
     versionKey: false
 
 module.exports =
-  dbLove: mongoose.model "love", createSchema
+  dbLove: mongoose.model "saylove", createSchema
     nickname: String
     content:
       type: String

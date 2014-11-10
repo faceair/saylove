@@ -162,8 +162,8 @@ $(function() {
         loadMoreCards(30,0);
         var shareData = {
             "appId": "", // 服务号可以填写appId
-            "imgUrl": "http://iwish.hustonline.net/resource/love/img/share_love_logo.png",
-            "link": "http://iwish.hustonline.net/love",
+            "imgUrl": "http://23.236.72.171:4890/img/background.png",
+            "link": "http://23.236.72.171:4890",
             "desc": '表白墙-有什么敢说的不敢说的，来这里表白吧！',
             "title": '表白墙-有什么敢说的不敢说的，来这里表白吧！'
         };

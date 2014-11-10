@@ -1,5 +1,5 @@
 mongoose = require "mongoose"
-debug = require("debug")("love")
+debug = require("debug")("saylove")
 {web,db} = require "./config"
 app = require "./app"
 mongoose.connect db.url, (err)->
